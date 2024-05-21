@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Outfit';
+  font-family: "Outfit";
   scroll-behavior: smooth;
 }
 
@@ -17,8 +17,32 @@ a {
 }
 
 .app {
-  width: 80%;
-  margin: auto;
+  width: auto;
+  padding: 0% 10%;
+  background: white;
+  transition: 0.5s;
+  padding-bottom: 100px;
+}
+
+.app.dark {
+  background-color: #15202b;
+  color: #ffffff;
+}
+
+.app.dark h1,
+.app.dark p,
+.app.dark b,
+.app.dark a,
+.app.dark button {
+  color: #ffffff;
+}
+
+.app.dark button {
+  transition: 0.5s;
+}
+
+.app.dark button:hover {
+  color: #49557e;
 }
 
 @keyframes fadeIn {

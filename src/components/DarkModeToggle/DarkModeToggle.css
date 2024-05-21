@@ -1,0 +1,20 @@
+.dark-toggle-container {
+  position: fixed;
+  height: 40px;
+  width: 40px;
+  background-color: #ffffff;
+  border: 1px solid #d4d4e3;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px 0 0 5px;
+  top: 200px;
+  right: 0;
+  z-index: 99;
+}
+
+.dark-toggle-container img {
+  width: 20px;
+}
