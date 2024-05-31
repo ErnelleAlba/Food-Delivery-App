@@ -27,8 +27,17 @@ function LoginPopup({ setShowLogin }) {
         </div>
         <button>{currState === "Sign Up" ? "Create Account" : "Login"}</button>
         <div className="login-popup-condition">
-          <input type="checkbox" required />
-          <p>By continuing, I agree to the terms of use & privacy policy</p>
+          {currState === "Sign Up" ? (
+            <div className="checkbox-container">
+              <input type="checkbox" required />
+              <p>By continuing, I agree to the terms of use & privacy policy</p>
+            </div>
+          ) : (
+            <div className="checkbox-container">
+              <input type="checkbox" required />
+              <p>Remember me</p>
+            </div>
+          )}
         </div>
         {currState === "Login" ? (
           <p>

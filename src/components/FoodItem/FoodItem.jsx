@@ -9,7 +9,7 @@ function FoodItem({ item }) {
   return (
     <div className="food-item">
       <div className="food-item-img-container">
-        <img src={item.image} alt="" className="food-item-image" />
+        <img src={item.image} alt="" className="food-item-image" loading="lazy" />
         {!cartItems[item._id] ? (
           <img
             className="add"

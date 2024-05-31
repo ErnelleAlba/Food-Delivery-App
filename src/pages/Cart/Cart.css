@@ -10,6 +10,13 @@
   font-size: max(1dvw, 12px);
 }
 
+.cart-items > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
 .cart-items-item {
   margin: 10px 0;
   color: black;

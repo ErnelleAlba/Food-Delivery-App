@@ -1,6 +1,7 @@
 .login-popup {
   position: absolute;
   z-index: 1;
+  left: 0%;
   width: 100%;
   height: 100%;
   background-color: #00000090;
@@ -20,6 +21,13 @@
   font-size: 14px;
   animation: fadeIn 0.5s;
 }
+
+.app.dark > .login-popup > .login-popup-container {
+  background-color: #15202b;
+  color: #ffffff;
+}
+
+
 
 .login-popup-title {
   display: flex;
@@ -56,9 +64,10 @@
   cursor: pointer;
 }
 
-.login-popup-condition {
+.checkbox-container {
   display: flex;
-  align-items: start;
+  flex-direction: row;
+  align-items:  center;
   gap: 8px;
   margin-top: -15px;
 }

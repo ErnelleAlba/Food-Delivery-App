@@ -12,7 +12,7 @@
   border-radius: 5px 0 0 5px;
   top: 200px;
   right: 0;
-  z-index: 99;
+  z-index: 25;
 }
 
 .dark-toggle-container img {
